@@ -4,8 +4,8 @@ import {BrowserRouter, Routes, Route, Link, useNavigate, useParams} from "react-
 import {collection, addDoc, getDocs, query, where, serverTimestamp, doc, updateDoc} from "firebase/firestore";
 import {ref, uploadBytes, getDownloadURL} from "firebase/storage";
 import {createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged} from "firebase/auth";
-import {auth, db, storage} from "./firebase";
-import "./style.css";
+import {auth, db, storage} from "../firebase";
+import "../style.css";
 
 const sample=[
  {id:"demo1",title:"Luxury Bungalow — DHA Phase 8",type:"Bungalow",area:"DHA Phase 8",price:"PKR 8.50 Crore",size:"500 Sq. Yds",status:"approved",images:[]},
